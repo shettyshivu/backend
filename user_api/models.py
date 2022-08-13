@@ -6,7 +6,7 @@ class company(models.Model):
     location = models.CharField(max_length=255)
     mailId = models.CharField(max_length=255)
     ownerName = models.CharField(max_length=255)
-    amount = models.IntegerField()
+    amount = models.CharField(max_length=255)
 
     def __self__(self):
         return self.name
