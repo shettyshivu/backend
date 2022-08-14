@@ -10,3 +10,12 @@ class company(models.Model):
 
     def __self__(self):
         return self.name
+
+class investor(models.Model):
+    investor_name = models.CharField(max_length=255)
+    no_invested = models.CharField(max_length=255)
+    mailId = models.CharField(max_length=255)
+    linkedin_profile = models.CharField(max_length=255)
+
+    def __self__(self):
+        return self.name
